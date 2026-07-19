@@ -1,0 +1,66 @@
+.newpost {
+  max-width: 560px;
+  margin: 0 auto;
+}
+.newpost-form {
+  background: var(--bg-card);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius);
+  padding: 22px 20px;
+}
+.seg {
+  display: inline-flex;
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 4px;
+  gap: 4px;
+}
+.seg button {
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+.seg .seg-on {
+  background: var(--primary);
+  color: #fff;
+}
+.stock-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+.stock-tile {
+  aspect-ratio: 1 / 1;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  border: 2px solid transparent;
+  background: var(--bg-elev);
+  transition: all 0.15s var(--ease);
+}
+.stock-tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.stock-tile.on {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(6,182,212,0.3);
+}
+.stock-video {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  color: var(--accent);
+  font-size: 12px;
+  gap: 4px;
+  flex-direction: column;
+}
+.newpost-form .btn {
+  width: 100%;
+  height: 44px;
+  margin-top: 4px;
+}
